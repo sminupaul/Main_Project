@@ -1,0 +1,16 @@
+https://docs.python.org/2/library/fcntl.html
+http://tilde.town/~cristo/file-locking-in-python.html
+https://www.geeksforgeeks.org/graph-plotting-in-python-set-1/
+
+multithreading with files
+https://gist.github.com/rahulrajaram/5934d2b786ed2c29dc418fafaa2830ad#file-md
+
+list locks assigned 
+lslocks
+FLOCK
+POSIX-- advisory lock***
+OFDLCK-- read lock-- regarding file descriptor
+
+mathplotlib
+https://www.geeksforgeeks.org/graph-plotting-in-python-set-1/  (beginer)
+https://pythonprogramming.net/loading-file-data-matplotlib-tutorial/ (advanced)

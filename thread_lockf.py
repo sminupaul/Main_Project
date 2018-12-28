@@ -4,7 +4,7 @@ import fcntl
 
 start_time=time.time()
 global_lock = threading.Lock()
-limit=150
+limit=250
 def read_files():
 	while global_lock.locked():
         	continue
@@ -34,6 +34,6 @@ def createthreads():
 		file.write("\n")
 		file.close()
 
-while(limit<200):
+while(limit<300):
 	limit+=10
 	createthreads()

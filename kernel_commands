@@ -1,0 +1,53 @@
+
+    depmod - handle dependency descriptions for loadable kernel modules.
+    insmod - install loadable kernel module.
+    lsmod - list loaded modules.
+    modinfo - display information about a kernel module.
+    modprobe - high level handling of loadable modules.
+    rmmod - unload loadable modules.
+
+
+from root 
+
+cd lib/modules/4.4.0-116-generic/kernel
+ls -l
+drwxr-xr-x  3 root root 4096 Mar 24  2018 arch
+drwxr-xr-x  4 root root 4096 Mar 24  2018 crypto
+drwxr-xr-x 91 root root 4096 Mar 24  2018 drivers
+drwxr-xr-x 55 root root 4096 Sep 27 20:46 fs
+drwxr-xr-x  4 root root 4096 Mar 24  2018 kernel
+drwxr-xr-x  7 root root 4096 Mar 24  2018 lib
+drwxr-xr-x  2 root root 4096 Mar 24  2018 mm
+drwxr-xr-x 52 root root 4096 Mar 24  2018 net
+drwxr-xr-x 13 root root 4096 Mar 24  2018 sound
+drwxr-xr-x  9 root root 4096 Mar 24  2018 ubuntu
+drwxr-xr-x  3 root root 4096 Mar 24  2018 virt
+drwxr-xr-x 10 root root 4096 Mar 24  2018 zfs
+
+
+
+
+download kernel source code
+...........................
+
+
+apt-get update
+
+in case soucre not in sources.list error
+ sudo nano /etc/apt/sources.list
+
+
+edit sources.list
+by removing # from dev-src
+main restriced
+etc..
+
+apt-get source linux-source
+
+**************************************************************
+
+
+/home/sminupaul/linux-4.4.0/kernel/locking
+/home/sminupaul/linux-4.4.0/fs/fcntl.c
+/home/sminupaul/linux-4.4.0/fs/afs/flock.c
+

@@ -14,3 +14,7 @@ OFDLCK-- read lock-- regarding file descriptor
 mathplotlib
 https://www.geeksforgeeks.org/graph-plotting-in-python-set-1/  (beginer)
 https://pythonprogramming.net/loading-file-data-matplotlib-tutorial/ (advanced)
+
+
+Learn locking
+https://www.thegeekstuff.com/2012/04/linux-file-locking-types/

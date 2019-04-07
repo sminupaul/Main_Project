@@ -4,7 +4,7 @@ import fcntl
 
 start_time=time.time()
 global_lock = threading.Lock()
-limit=250
+limit=10
 def read_files():
 	while global_lock.locked():
         	continue
@@ -27,13 +27,13 @@ def createthreads():
     		t.start()
 	[thread.join() for thread in threads]
 
-	with open("exe_time_lockf.txt", "a+") as file:
+	with open("exe_time_lockf_new.txt", "a+") as file:
 		file.write(str(limit))
 		file.write(",")
 		file.write(str(time.time() - start_time))
 		file.write("\n")
 		file.close()
 
-while(limit<300):
+while(limit<30):
 	limit+=10
 	createthreads()

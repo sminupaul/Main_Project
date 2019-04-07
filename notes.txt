@@ -18,3 +18,42 @@ https://pythonprogramming.net/loading-file-data-matplotlib-tutorial/ (advanced)
 
 Learn locking
 https://www.thegeekstuff.com/2012/04/linux-file-locking-types/
+
+execute qd_locking
+g++ -std=gnu++11 -I/usr/local/include/qd/ -L/usr/local/lib/ myprogram.cpp -pthread -lqd -o myprogram
+
+
+
+Presentation
+1 How to download kernel source code:
+	2ways:
+	a)git repository of Linux torvalds
+	b)from terminal by editing sources list: apt-get source linux-source
+		in case soucre not in sources.list error
+ 		sudo nano /etc/apt/sources.list
+
+
+		edit sources.list
+		by removing # from dev-src
+	//Download documentation fro git repository
+2 How to locate required c files.
+	module: fs file system
+	sub module afs: andrew file system
+	/home/sminupaul/linux-4.4.0/kernel/locking
+	/home/sminupaul/linux-4.4.0/fs/fcntl.c
+	/home/sminupaul/linux-4.4.0/fs/afs/flock.c
+	/home/sminupaul/linux-4.4.0/fs/locks.c
+	verify if its loadable module Using lsmod
+3 How to build kernel
+	get required compilers: build-essentials, libelf-dev
+	create a copy of config. file
+		cp -v /boot/config-$(uname -r) .config
+	make or make-j4
+	make modules_install
+	make install
+	reboot
+
+	
+
+	
+
